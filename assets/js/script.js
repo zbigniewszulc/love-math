@@ -23,8 +23,10 @@ document.addEventListener("DOMContentLoaded", function(){
  * and after the user's answer has been processed
  */
 function runGame(gameType) {
-
+    //clear answer box every time new game is run
     document.getElementById("answer-box").value = "";
+    //set cursor on answer box every time new game is run
+    document.getElementById("answer-box").focus();
 
     // Creates two random numbers between 1 and 25
     let num1 =  Math.floor(Math.random() * 25) + 1;
